@@ -7,20 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const form5 = document.getElementById("form5");
     const form6 = document.getElementById("form6");
 
-    // Helper function for validation
     function validateInputs(form) {
         const inputs = form.querySelectorAll("input");
         for (const input of inputs) {
             if (!input.value.trim()) {
                 alert(`Please fill out the ${input.previousElementSibling?.innerText || "required field"}`);
-                input.focus(); // Focus on the first invalid field
-                return false; // Exit if validation fails
+                input.focus(); 
+                return false; 
             }
         }
         return true;
     }
 
-    // Form 1 Validation and Transition
+    // Form 1 Validation 
     document.getElementById("next1").addEventListener("click", function (event) {
         event.preventDefault();
         if (validateInputs(form1)) {
