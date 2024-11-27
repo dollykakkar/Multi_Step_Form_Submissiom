@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="form1" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 ">
+        <form id="personalForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Student Name -->
+            <div>
+                <label for="sname" class="block text-blue-500 font-bold mb-1 ">Student Name:</label>
+                <input type="text" id="sname"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter student's name" required>
+            </div>
+
+            <!-- Father's Name -->
+            <div>
+                <label for="fname" class="block text-blue-500 font-bold mb-1">Father's Name:</label>
+                <input type="text" id="fname"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter father's name" required>
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <label for="gender" class="block text-blue-500 font-bold mb-1">Gender:</label>
+                <select id="gender"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Mother's Name -->
+            <div>
+                <label for="mname" class="block text-blue-500 font-bold mb-1">Mother's Name:</label>
+                <input type="text" id="mname"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter mother's name" required>
+            </div>
+
+            <!-- Category -->
+            <div>
+                <label for="category" class="block text-blue-500 font-bold mb-1">Category:</label>
+                <input type="text" id="category"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter category" required>
+            </div>
+
+            <!-- Cast -->
+            <div>
+                <label for="cast" class="block text-blue-500 font-bold mb-1">Cast:</label>
+                <input type="text" id="cast"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter cast" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div>
+                <label for="date" class="block text-blue-500 font-bold mb-1">Date of Birth:</label>
+                <input type="date" id="date"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    required>
+            </div>
+
+            <!-- Aadhar Number -->
+            <div>
+                <label for="aadharno" class="block text-blue-500 font-bold mb-1">Aadhar Number:</label>
+                <input type="number" id="aadharno"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter Aadhar number" required>
+            </div>
+
+            <!-- Guardian's Name -->
+            <div>
+                <label for="gname" class="block text-blue-500 font-bold mb-1">Guardian's Name:</label>
+                <input type="text" id="gname"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter guardian's name" required>
+            </div>
+
+            <!-- Father's Occupation -->
+            <div>
+                <label for="father" class="block text-blue-500 font-bold mb-1">Father's Occupation:</label>
+                <input type="text" id="father"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter father's occupation" required>
+            </div>
+
+            <!-- Religion -->
+            <div>
+                <label for="religion" class="block text-blue-500 font-bold mb-1">Religion:</label>
+                <input type="text" id="religion"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter religion" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-span-1 md:col-span-2 text-center">
+                <button type="submit" id="next1"
+                    class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Submit and Next
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

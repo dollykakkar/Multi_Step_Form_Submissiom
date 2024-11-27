@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Details Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="form3" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">School Details Form</h2>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Apply For -->
+            <div>
+                <label class="block text-blue-500 font-bold mb-1">Apply For:</label>
+                <div class="flex items-center space-x-4">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="apply" value="Fresh"
+                            class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
+                        <span class="text-gray-700">Fresh</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="apply" value="Renewed"
+                            class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
+                        <span class="text-gray-700">Renewed</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div>
+                <label class="block text-blue-500 font-bold mb-1">Status:</label>
+                <div class="flex items-center space-x-4">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="status" value="Active"
+                            class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
+                        <span class="text-gray-700">Active</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="status" value="Passive"
+                            class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
+                        <span class="text-gray-700">Passive</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Institute District -->
+            <div>
+                <label for="institute" class="block text-blue-500 font-bold mb-1">Institute District:</label>
+                <input type="text" id="institute"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter institute district" required>
+            </div>
+
+            <!-- Institute Block -->
+            <div>
+                <label for="block" class="block text-blue-500 font-bold mb-1">Institute Block:</label>
+                <input type="text" id="block"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter institute block">
+            </div>
+
+            <!-- Institute Name -->
+            <div>
+                <label for="name" class="block text-blue-500 font-bold mb-1">Institute Name:</label>
+                <input type="text" id="name"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter institute name">
+            </div>
+
+            <!-- Course Name -->
+            <div>
+                <label for="course" class="block text-blue-500 font-bold mb-1">Course Name:</label>
+                <input type="text" id="course"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                    placeholder="Enter course name">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-span-1 md:col-span-2 text-center">
+                <button type="submit" id="next3"
+                    class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Submit and Next
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div id="form5" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 ">
+        <form class="grid grid-cols-1 gap-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Payment Details</h2>
+
+            <!-- Transaction ID -->
+            <div>
+                <label for="trans_id" class="block text-blue-500 font-bold mb-1">Transaction ID:</label>
+                <input type="text" id="trans_id" placeholder="Enter your transaction ID" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <!-- Payment Date -->
+            <div>
+                <label for="payment_date" class="block text-blue-500 font-bold mb-1">Payment Date:</label>
+                <input type="date" id="payment_date" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <!-- Payment Amount -->
+            <div>
+                <label for="amount" class="block text-blue-500 font-bold mb-1">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter payment amount" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <!-- Payment Mode -->
+            <div>
+                <label for="mode" class="block text-blue-500 font-bold mb-1">Payment Mode:</label>
+                <input type="text" id="mode" placeholder="Enter payment mode" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" id="next5"
+                    class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Final Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
