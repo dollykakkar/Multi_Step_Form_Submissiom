@@ -275,7 +275,7 @@
                 }
             }
     
-            // Show error messages
+            // Show error
             function showErrorMessage(field, message) {
                 let errorElement = field.nextElementSibling;
                 if (!errorElement || !errorElement.classList.contains("error-message")) {
@@ -288,12 +288,12 @@
                 field.classList.toggle("border-blue-400", !message);
             }
     
-            // Check if form is valid
+            
             function isFormValid() {
                 return Object.values(errors).every(error => !error);
             }
     
-            // Validate on blur or change
+            
             inputs.forEach(input => {
                 input.addEventListener("blur", () => validateField(input));
                 input.addEventListener("input", () => validateField(input));

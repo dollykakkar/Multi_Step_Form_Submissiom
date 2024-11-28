@@ -228,18 +228,18 @@
       </div>
     <script>
         document.getElementById('continueBtn').addEventListener('click', function () {
-            // Get all checkboxes
+            
             const checkboxes = document.querySelectorAll('.instruction-checkbox');
             let allChecked = true;
 
-            // Check if all checkboxes are checked
+            
             checkboxes.forEach(checkbox => {
                 if (!checkbox.checked) {
                     allChecked = false;
                 }
             });
 
-            // Redirect if all checkboxes are checked
+            
             if (allChecked) {
                 window.location.href = 'Regestration.html';
             } else {
