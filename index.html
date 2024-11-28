@@ -1,395 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Forms</title>
+    <title>Header</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="validation.js" defer></script>
+    <script src="slide.js" defer></script>
 </head>
-
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-4xl mx-auto mt-10">
-        <!-- Header Section -->
-        <div class="bg-blue-500 text-white text-center py-4 rounded-t-lg">
-            <h1 class="text-2xl font-bold" id="title">Basic Info</h1>
+<body>
+    <div>
+        <!--Header-->
+        <div class="h-6 ">
+            <marquee class="bg-red-800 text-white">ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024, Apply Now.“</marquee>
         </div>
 
-        <!-- Navigation Steps -->
-        <div class="flex justify-around bg-gray-200 p-4 rounded-b-lg">
-            <div class="flex flex-col items-center">
-                <div id="div1" class="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded-full">
-                    1
+        <div class="bg-blue-800 text-white py-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="\assets\Header\141803-aieese secondarylogo.png" alt="Logo" class="w-20 h-auto">
                 </div>
-                <p id="p1" class="text-sm mt-2 text-blue-500 font-semibold">Basic Detail</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div id="div2" class="w-8 h-8 flex items-center justify-center bg-gray-300 text-gray-500 rounded-full">
-                    2
-                </div>
-                <p id="p2" class="text-sm mt-2 text-gray-500">Address</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div id="div3" class="w-8 h-8 flex items-center justify-center bg-gray-300 text-gray-500 rounded-full">
-                    3
-                </div>
-                <p id="p3" class="text-sm mt-2 text-gray-500">Academic Details</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div id="div4" class="w-8 h-8 flex items-center justify-center bg-gray-300 text-gray-500 rounded-full">
-                    4
-                </div>
-                <p id="p4" class="text-sm mt-2 text-gray-500">Upload Documents</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div id="div5" class="w-8 h-8 flex items-center justify-center bg-gray-300 text-gray-500 rounded-full">
-                    5
-                </div>
-                <p id="p5" class="text-sm mt-2 text-gray-500">Payment</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div id="div6" class="w-8 h-8 flex items-center justify-center bg-gray-300 text-gray-500 rounded-full">
-                    6
-                </div>
-                <p id="p6" class="text-sm mt-2 text-gray-500">Final Submission</p>
-            </div>
-        </div>
-
-        <!-- Form Section -->
-        <div id="form1" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 ">
-            <form id="personalForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Student Name -->
-                <div>
-                    <label for="sname" class="block text-blue-500 font-bold mb-1 ">Student Name:</label>
-                    <input type="text" id="sname"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter student's name" required>
-                </div>
-
-                <!-- Father's Name -->
-                <div>
-                    <label for="fname" class="block text-blue-500 font-bold mb-1">Father's Name:</label>
-                    <input type="text" id="fname"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter father's name" required>
-                </div>
-
-                <!-- Gender -->
-                <div>
-                    <label for="gender" class="block text-blue-500 font-bold mb-1">Gender:</label>
-                    <select id="gender"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        required>
-                        <option value="" disabled selected>Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <!-- Mother's Name -->
-                <div>
-                    <label for="mname" class="block text-blue-500 font-bold mb-1">Mother's Name:</label>
-                    <input type="text" id="mname"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter mother's name" required>
-                </div>
-
-                <!-- Category -->
-                <div>
-                    <label for="category" class="block text-blue-500 font-bold mb-1">Category:</label>
-                    <input type="text" id="category"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter category" required>
-                </div>
-
-                <!-- Cast -->
-                <div>
-                    <label for="cast" class="block text-blue-500 font-bold mb-1">Cast:</label>
-                    <input type="text" id="cast"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter cast" required>
-                </div>
-
-                <!-- Date of Birth -->
-                <div>
-                    <label for="date" class="block text-blue-500 font-bold mb-1">Date of Birth:</label>
-                    <input type="date" id="date"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        required>
-                </div>
-
-                <!-- Aadhar Number -->
-                <div>
-                    <label for="aadharno" class="block text-blue-500 font-bold mb-1">Aadhar Number:</label>
-                    <input type="number" id="aadharno"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter Aadhar number" required>
-                </div>
-
-                <!-- Guardian's Name -->
-                <div>
-                    <label for="gname" class="block text-blue-500 font-bold mb-1">Guardian's Name:</label>
-                    <input type="text" id="gname"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter guardian's name" required>
-                </div>
-
-                <!-- Father's Occupation -->
-                <div>
-                    <label for="father" class="block text-blue-500 font-bold mb-1">Father's Occupation:</label>
-                    <input type="text" id="father"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter father's occupation" required>
-                </div>
-
-                <!-- Religion -->
-                <div>
-                    <label for="religion" class="block text-blue-500 font-bold mb-1">Religion:</label>
-                    <input type="text" id="religion"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter religion" required>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="col-span-1 md:col-span-2 text-center">
-                    <button type="submit" id="next1"
-                        class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Submit and Next
-                    </button>
-                </div>
-            </form>
-        </div>
-
-
-
-        <!--Form2-->
-        <div id="form2" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden ">
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                <!-- Mobile Number -->
-                <div>
-                    <label for="number" class="block text-blue-500 font-bold mb-1">Mobile No:</label>
-                    <input type="number" id="number" placeholder="Enter your mobile number" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Email -->
-                <div>
-                    <label for="mail" class="block text-blue-500 font-bold mb-1">Email ID:</label>
-                    <input type="email" id="mail" placeholder="Enter your email" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Domicile State -->
-                <div>
-                    <label for="State" class="block text-blue-500 font-bold mb-1">Domicile State:</label>
-                    <input type="text" id="State" placeholder="Enter your state" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Home District -->
-                <div>
-                    <label for="dist" class="block text-blue-500 font-bold mb-1">Home District:</label>
-                    <input type="text" id="dist" placeholder="Enter your district" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Home Block -->
-                <div>
-                    <label for="Block" class="block text-blue-500 font-bold mb-1">Home Block:</label>
-                    <input type="number" id="Block" placeholder="Enter your block" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Pin Code -->
-                <div>
-                    <label for="code" class="block text-blue-500 font-bold mb-1">Pin Code:</label>
-                    <input type="number" id="code" placeholder="Enter your pin code" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Permanent Address -->
-                <div>
-                    <label for="adrs" class="block text-blue-500 font-bold mb-1">Permanent Address:</label>
-                    <input type="text" id="adrs" placeholder="Enter your address" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Submit Button -->
-                <div class="col-span-1 md:col-span-2 text-center">
-                    <input type="submit" value="Save and Next" id="next2"
-                        class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                </div>
-            </form>
-        </div>
-
-        <!--Form3 -->
-        <div id="form3" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">School Details Form</h2>
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Apply For -->
-                <div>
-                    <label class="block text-blue-500 font-bold mb-1">Apply For:</label>
-                    <div class="flex items-center space-x-4">
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="apply" value="Fresh"
-                                class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
-                            <span class="text-gray-700">Fresh</span>
-                        </label>
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="apply" value="Renewed"
-                                class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
-                            <span class="text-gray-700">Renewed</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Status -->
-                <div>
-                    <label class="block text-blue-500 font-bold mb-1">Status:</label>
-                    <div class="flex items-center space-x-4">
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="status" value="Active"
-                                class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
-                            <span class="text-gray-700">Active</span>
-                        </label>
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="status" value="Passive"
-                                class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
-                            <span class="text-gray-700">Passive</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Institute District -->
-                <div>
-                    <label for="institute" class="block text-blue-500 font-bold mb-1">Institute District:</label>
-                    <input type="text" id="institute"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter institute district" required>
-                </div>
-
-                <!-- Institute Block -->
-                <div>
-                    <label for="block" class="block text-blue-500 font-bold mb-1">Institute Block:</label>
-                    <input type="text" id="block"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter institute block">
-                </div>
-
-                <!-- Institute Name -->
-                <div>
-                    <label for="name" class="block text-blue-500 font-bold mb-1">Institute Name:</label>
-                    <input type="text" id="name"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter institute name">
-                </div>
-
-                <!-- Course Name -->
-                <div>
-                    <label for="course" class="block text-blue-500 font-bold mb-1">Course Name:</label>
-                    <input type="text" id="course"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                        placeholder="Enter course name">
-                </div>
-
-                <!-- Submit Button -->
-                <div class="col-span-1 md:col-span-2 text-center">
-                    <button type="submit" id="next3"
-                        class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Submit and Next
-                    </button>
-                </div>
-            </form>
-        </div>
-
-        <!--Form 4-->
-        <div id="form4" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <form class="grid grid-cols-1 gap-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Educational Documents</h2>
-
-                <!-- Secondary Marksheet -->
-                <div>
-                    <label for="marksheet" class="block text-blue-500 font-bold mb-1">Secondary Marksheet:</label>
-                    <input type="file" id="marksheet" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-
-                <!-- Aadhaar Card -->
-                <div>
-                    <label for="aadhaar" class="block text-blue-500 font-bold mb-1">Aadhaar Card:</label>
-                    <input type="file" id="aadhaar" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-
-                <!-- Photo -->
-                <div>
-                    <label for="photo" class="block text-blue-500 font-bold mb-1">Photo:</label>
-                    <input type="file" id="photo" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-
-                <!-- Submit Button -->
+    
+                <!-- Text Content -->
                 <div class="text-center">
-                    <input type="submit" value="Save and Next" id="next4"
-                        class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <h1 class="text-xl font-bold">AIEESE (Secondary) - 2025</h1>
+                    <p class="text-sm">ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION (SECONDARY) - 2025</p>
+                    <p class="text-sm">अखिल भारतीय इंजीनियरिंग प्रवेश छात्रवृत्ति परीक्षा (द्वितीयक) - 2025</p>
                 </div>
-            </form>
+    
+                <!-- Contact Information -->
+                <div class="text-right">
+                    <p class="text-sm">📞 +91-9990555522</p>
+                    <p class="text-sm">📱 +91-9355222186</p>
+                </div>
+            </div>
         </div>
 
+        
+        <nav class="bg-blue-900 relative z-10">
+            <ul class="flex justify-center space-x-10 text-white font-medium py-4">
+              <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">HOME</a>
+              </li>
+              <li class="h-8 w-24 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">ABOUT US</a>
+              </li>
+              <li class="h-8 w-20 hover:bg-red-800 relative group border-r border-gray-400">
+                <a href="#">Student</a>
+                <!-- Dropdown -->
+                <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm mt-2 space-y-1 z-20">
+                  <li class="bg-white text-black w-64 py-1 px-2 hover:bg-red-700">
+                    <a href="/StepToApply.html">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
+                  </li>
+                  <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                    <a href="/LoginForm.html" >REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
+                  </li>
+                  <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                    <a href="#">GET/RECOVER PASSWORD</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="h-8 w-32 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">OFFICIAL LOGIN</a>
+              </li>
+              <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="h-8 w-28 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </nav>
+          
+          
+          <div class="relative inline-block" id="slide">
+            <div
+              class="absolute top-24 left-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
+              id="btn1"
+            >
+              &lt;
+            </div>
+            <div
+              class="absolute top-24 right-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
+              id="btn2"
+            >
+              &gt;
+            </div>
+            <img src="\assets\Header\103514-AIEESE_Seco_-Home-page-1.jpg" alt="img1" id="img1">
+            <img src="\assets\Header\103558-AIEESE_Seco_-Home-page-3.jpg" alt="img2" class="hidden" id="img2">
+            <img src="\assets\Header\103702-AIEESE_Seco_-Home-page-4.jpg" alt="img3" class="hidden" id="img3">
+            <img src="\assets\Header\104217-AIEESE_Seco_-Home-page-5.jpg" alt="img4" class="hidden" id="img4">
+            <img src="\assets\Header\104233-AIEESE_Seco_-Home-page-6.jpg" alt="img5" class="hidden" id="img5">
+            <img src="\assets\Header\180707-AIEESE_Seco_-Home-page-2.jpg" alt="img7" class="hidden" id="img6">
+          </div>
+          
 
-        <!--Form5-->
-        <div id="form5" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <form class="grid grid-cols-1 gap-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Payment Details</h2>
+        <!--sideBar-->
+        <div class="flex">
+            <!-- Sidebar -->
+            <div class="w-60 h-full text-white p-3 border border-gray-300">
+              <h2 class="text-xl font-semibold mb-1 bg-red-800 text-center">IMPORTANT LINKS</h2>
+              <ul class="space-y-1">
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Home</a>
+                </li>
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">About Us</a>
+                </li>
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Student</a>
+                </li>
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Official Login</a>
+                </li>
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Reports</a>
+                </li>
+                <li class="border border-gray-300">
+                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          
+            <!-- Middle Content -->
+            <div class="flex-grow mx-4">
+              <div class="bg-red-800 text-white text-center py-2 font-semibold">
+                Important Instructions for Student and Institution.
+              </div>
+          
+              <!-- Navigation Buttons -->
+              <div class="flex justify-center gap-4 bg-green-700 py-4">
+                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Student Login</a>
+                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">List of Finalized Student</a>
+                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Verify Your Application Status</a>
+                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Contact</a>
+              </div>
+          
+              <!-- Main Content -->
+              <div class="max-w-4xl bg-white shadow-lg rounded-lg mt-6 p-6">
+                <h1 class="text-center text-2xl font-bold text-red-600 mb-4">WELCOME TO AIEESE (Secondary) - 2025</h1>
+                <p class="text-gray-800 leading-relaxed">
+                  ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION-SECONDARY (AIEESE-Secondary) is an examination body
+                  that offers scholarships to aspiring students who qualify for government engineering colleges, including IITs,
+                  NITs, and IIITs, through the JEE examinations.
+                </p>
+                <p class="text-gray-800 leading-relaxed mt-4">
+                  It is crucial for all aspirants to take the AIEESE (Secondary) exam because if they secure admission to IITs,
+                  NITs, or IIITs, they become eligible to receive a scholarship. Scholarships are awarded based on their performance
+                  in the AIEESE (Secondary) examination.
+                </p>
+                <p class="text-gray-800 leading-relaxed mt-4">
+                  AIEESE (Secondary) was established in 2012 under the "Scholarship and Admission Eligibility Testing Agency (SAET
+                  Agency)." Since then, the examination has been conducted annually. The objective of AIEESE (Secondary) is to
+                  provide financial assistance to engineering aspirants who qualify for IIT, NIT, or IIIT institutions based on their
+                  performance in the AIEESE (Secondary) exam. Students can benefit from scholarships covering up to four years of
+                  tuition fees.
+                </p>
+                <p class="text-gray-800 leading-relaxed mt-4">
+                  Since 2012, hundreds of thousands of students from all across India have applied for and benefited from this
+                  scholarship. Most of the students who qualify for IITs, NITs, and IIITs have applied for the AIEESE (Secondary)
+                  scholarship program to take advantage of the financial benefits. The students can avail up to the complete course
+                  fee as a scholarship based on the merit list prepared through the AIEESE Secondary Examination.
+                  <a href="#" class="text-blue-600 underline hover:text-blue-800">Read More</a>
+                </p>
+              </div>
+            </div>
+          
+            <!-- News and Announcement -->
+            <div class="w-80 bg-white border border-gray-300 shadow-md rounded-md">
+              <div class="bg-red-800 text-white text-center py-2 rounded-t-md font-bold text-lg">
+                NEWS & ANNOUNCEMENT
+              </div>
+              <ul class="p-4 space-y-4">
+                <li class="flex items-start">
+                  <span class="text-red-600 font-bold mr-2">NEW</span>
+                  <p>
+                    <strong>ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024. Apply Now.</strong>
+                    <a href="#" class="text-blue-600 underline">Read more</a>
+                  </p>
+                </li>
+                
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>10+2 Appearing and Qualified students can apply.</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+      <!-- Item 3 -->
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>10+2 Appearing or qualified (Subject group: PCM) can apply for Engineering.</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+      <!-- Item 4 -->
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>All Participating institutes are government approved.</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+      <!-- Item 5 -->
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>All JEE (Mains/Advanced) aspirants can apply for AIEESE (Secondary).</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+      <!-- Item 6 -->
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>Examination centres are available in all major cities across India.</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+      <!-- Item 7 -->
+      <li class="flex items-start">
+        <span class="text-red-600 font-bold mr-2">NEW</span>
+        <p>
+          <strong>Scholarship distribution process starts from January 15, 2025.</strong>
+          <a href="#" class="text-blue-600 underline">Read more</a>
+        </p>
+      </li>
+              </ul>
+              <div class="text-center bg-gray-100 py-2 rounded-b-md">
+                <a href="#" class="text-blue-600 font-semibold underline">Click here for all the announcements</a>
+              </div>
+            </div>
+          </div>
+          
+        <!--Footer-->
 
-                <!-- Transaction ID -->
-                <div>
-                    <label for="trans_id" class="block text-blue-500 font-bold mb-1">Transaction ID:</label>
-                    <input type="text" id="trans_id" placeholder="Enter your transaction ID" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
+        <div class="flex justify-between items-center  bg-white w-full border-t-8 border-blue-800">
 
-                <!-- Payment Date -->
-                <div>
-                    <label for="payment_date" class="block text-blue-500 font-bold mb-1">Payment Date:</label>
-                    <input type="date" id="payment_date" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
+            <div className="w-1/6 ">
+    
+                <img className= ' w-full h-full object-cover' src="\assets\FooterImg\digital india.png" alt="Digital Marketing" >
+            </div>
+            <div className="w-1/6 ">
+    
+                <img className= ' w-1/6 h-full object-cover'  src="\assets\FooterImg\make in india.png" alt="Make in India" >
+                
+            </div>
+            <div className="w-1/6 ">
+    
+                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\skill india.png" alt="skill india">
+                
+            </div>
+            <div className="w-1/6 ">
+    
+                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\swatch bharat.png" alt="swatch bharat">
+            </div>
+            <div className="w-1/6 ">
+    
+                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\msme.png" alt="msme" alt="msme">
+            </div>
 
-                <!-- Payment Amount -->
-                <div>
-                    <label for="amount" class="block text-blue-500 font-bold mb-1">Amount:</label>
-                    <input type="number" id="amount" placeholder="Enter payment amount" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Payment Mode -->
-                <div>
-                    <label for="mode" class="block text-blue-500 font-bold mb-1">Payment Mode:</label>
-                    <input type="text" id="mode" placeholder="Enter payment mode" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                </div>
-
-                <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit" id="next5"
-                        class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Final Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-        <!--last step-->
-        <div id="form6" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <h1 class="text-2xl font-bold text-gray-800">&#10004; Congratulations, you have completed the process successfully!</h1>
         </div>
         
+        <div class="bg-blue-800 text-white px-2 py-4">
+            <div class="flex items-center space-x-4">
+             
+              <a href="#" class="hover:underline border-l border-gray-500">Refund & Cancellation</a>
+          
+              <a href="#" class="hover:underline">Terms & Conditions</a>
+          
+              <a href="#" class="hover:underline">Privacy & Policy</a>
+              
+              <a href="#" class="hover:underline">Sponsers</a>
+          
+              <a href="#" class="hover:underline ">Useful Links</a
+           
+              <a href="#" class="hover:underline">Joint Entrance Examination</a>
+          
+              <a href="#" class="hover:underline">Online Payment</a>
+    
+              <a href="#" class="hover:underline">Payment Receipt</a>
+          
+            </div>
+          </div>
+          
+          
+        <div class="bg-blue-900">
+            <div class="text-white flex items-center justify-between px-4 py-2">
+             
+              <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
+              
+              <div class="flex space-x-4">
+                <img src="\assets\FooterIcon\fb.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\insta.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\print-logo.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\quo.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\yout.png" class="h-7 w-7">
+              </div>
+             
+              <div class="text-right flex flex-col justify-center items-center">
+                <p>Candidate can also apply AIEESE(Primary)</p>
+                <a href="#" class="text-blue-200 hover:underline ml-16">CLICK HERE</a>
+              </div>
+            </div>
+          </div>
+    
     </div>
-
-
 </body>
-
 </html>
