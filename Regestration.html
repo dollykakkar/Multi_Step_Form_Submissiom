@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+
+<body class="bg-gray-200">
     <div class="h-6 ">
-        <marquee class="bg-red-800 text-white">ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024, Apply Now.“</marquee>
+        <marquee class="bg-red-800 text-white">ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November
+            25th, 2024, Apply Now.“</marquee>
     </div>
 
     <div class="bg-blue-800 text-white py-4">
@@ -33,221 +36,246 @@
         </div>
     </div>
 
-    
+
     <nav class="bg-blue-900 relative z-10">
         <ul class="flex justify-center space-x-10 text-white font-medium py-4">
-          <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
-            <a href="#">HOME</a>
-          </li>
-          <li class="h-8 w-24 hover:bg-red-800 border-r border-gray-400">
-            <a href="#">ABOUT US</a>
-          </li>
-          <li class="h-8 w-20 hover:bg-red-800 relative group border-r border-gray-400">
-            <a href="#">Student</a>
-            <!-- Dropdown -->
-            <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm mt-2 space-y-1 z-20">
-              <li class="bg-white text-black w-64 py-1 px-2 hover:bg-red-700">
-                <a href="#">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
-              </li>
-              <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
-                <a href="/LoginForm.html" target="_self">REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
-              </li>
-              <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
-                <a href="#">GET/RECOVER PASSWORD</a>
-              </li>
-            </ul>
-          </li>
-          <li class="h-8 w-32 hover:bg-red-800 border-r border-gray-400">
-            <a href="#">OFFICIAL LOGIN</a>
-          </li>
-          <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
-            <a href="#">FAQ</a>
-          </li>
-          <li class="h-8 w-28 hover:bg-red-800 border-r border-gray-400">
-            <a href="#">CONTACT US</a>
-          </li>
+            <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">HOME</a>
+            </li>
+            <li class="h-8 w-24 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">ABOUT US</a>
+            </li>
+            <li class="h-8 w-20 hover:bg-red-800 relative group border-r border-gray-400">
+                <a href="#">Student</a>
+                <!-- Dropdown -->
+                <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm mt-2 space-y-1 z-20">
+                    <li class="bg-white text-black w-64 py-1 px-2 hover:bg-red-700">
+                        <a href="#">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
+                    </li>
+                    <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                        <a href="/LoginForm.html" target="_self">REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
+                    </li>
+                    <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                        <a href="#">GET/RECOVER PASSWORD</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="h-8 w-32 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">OFFICIAL LOGIN</a>
+            </li>
+            <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">FAQ</a>
+            </li>
+            <li class="h-8 w-28 hover:bg-red-800 border-r border-gray-400">
+                <a href="#">CONTACT US</a>
+            </li>
         </ul>
-      </nav>
-      
-    <div class="bg-blue-200 text-black text-center  p-4">
-        <p class="text-lg ">Student Registration Details</p>
+    </nav>
+<div class="mx-20 my-5 flex flex-col gap-4">
+    <div>
+    <div class="bg-blue-500 text-black text-center  p-4">
+        <p class="text-xl text-white font-semibold">Student Registration Details</p>
     </div>
-    <form class="max-w-full mx-auto mt-8 bg-white shadow-md p-6 rounded-lg">
-       
 
-        <div class="grid grid-cols-4 gap-4">
-            <div>
-                <label for="name" class="block font-medium text-gray-700 py-2">Name of Student:</label>
-                <input type="text" id="name" name="name" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div>
-                <label for="father_name" class="block font-medium text-gray-700 py-2">Father's Name:</label>
-                <input type="text" id="father_name" name="father_name" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div>
-                <label for="mother_name" class="block font-medium text-gray-700 py-2">Mother's Name:</label>
-                <input type="text" id="mother_name" name="mother_name" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div>
-                <label for="dob" class="block font-medium text-gray-700 py-2">Date of Birth as Per Certificate:</label>
-                <input type="date" id="dob" name="dob" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
+    <form id="personalForm" class="grid grid-cols-1 md:grid-cols-2 gap-4 shadow-md p-6 rounded-b-lg">
+        <div>
+            <label for="name" class="block text-blue-500 font-bold mb-1">Name of Student:</label>
+            <input type="text" id="name" name="name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter student's name" required>
         </div>
-        
-        <div class="grid grid-cols-4 gap-4 mt-4">
-            <div>
-                <label for="gender" class="block font-medium text-gray-700 py-2">Gender:</label>
-                <select id="gender" name="gender" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div>
-                <label for="category" class="block font-medium text-gray-700 py-2">Category:</label>
-                <input type="text" id="category" name="category" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div>
-                <label for="home_district" class="block font-medium text-gray-700 py-2">Home District:</label>
-                <input type="text" id="home_district" name="home_district" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div>
-                <label for="institute_state" class="block font-medium text-gray-700 py-2">Institute State:</label>
-                <input type="text" id="institute_state" name="institute_state" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
+        <div>
+            <label for="father_name" class="block text-blue-500 font-bold mb-1">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter father's name" required>
         </div>
-        
-        
-       
-        <div class="grid grid-cols-4 gap-4 mt-4">
-            <div>
-                <label for="institute_district" class="block font-medium text-gray-700">Institute District:</label>
-                <input type="text" id="institute_district" name="institute_district" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
-            <div class="col-span-3">
-                <label for="institute_name" class="block font-medium text-gray-700">Institute Name:</label>
-                <input type="text" id="institute_name" name="institute_name" class="w-full border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
-            </div>
+        <div>
+            <label for="mother_name" class="block text-blue-500 font-bold mb-1">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter mother's name" required>
         </div>
-        
-        
-        <!-- <div class="text-center mt-6">
-            <button type="submit" class="px-6 py-2 bg-blue-500 text-white font-medium rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                Submit
-            </button>
-        </div> -->
-    </form>
-    <div  class="bg-blue-200 text-black p-4" >
-        <p >E-mail Verification</p>
-    </div>
-    <form class="bg-white p-6 shadow-md rounded-md">
-        <div class="flex items-center space-x-4">
-            <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Email (वैकल्पिक - सूचनाओं के बेहतर आदान-<br>प्रदान के लिए):</label>
-            <input type="email" id="email" class="w-80 border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
+        <div>
+            <label for="dob" class="block text-blue-500 font-bold mb-1">Date of Birth as Per Certificate:</label>
+            <input type="date" id="dob" name="dob"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                required>
+        </div>
+        <div>
+            <label for="gender" class="block text-blue-500 font-bold mb-1">Gender:</label>
+            <select id="gender" name="gender"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="category" class="block text-blue-500 font-bold mb-1">Category:</label>
+            <input type="text" id="category" name="category"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter category" required>
+        </div>
+        <div>
+            <label for="home_district" class="block text-blue-500 font-bold mb-1">Home District:</label>
+            <input type="text" id="home_district" name="home_district"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter home district" required>
+        </div>
+        <div>
+            <label for="institute_state" class="block text-blue-500 font-bold mb-1">Institute State:</label>
+            <input type="text" id="institute_state" name="institute_state"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter institute state" required>
+        </div>
+        <div>
+            <label for="institute_district" class="block text-blue-500 font-bold mb-1">Institute District:</label>
+            <input type="text" id="institute_district" name="institute_district"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter institute district" required>
+        </div>
+        <div>
+            <label for="institute_name" class="block text-blue-500 font-bold mb-1">Institute Name:</label>
+            <input type="text" id="institute_name" name="institute_name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                placeholder="Enter institute name" required>
         </div>
     </form>
-    <div  class="bg-blue-200 text-black p-4" >
-        <p >Mobile Verification</p>
     </div>
-    <form class="bg-white p-6 shadow-md rounded-md">
+
+
+
+
+    <div>
+    <div class="bg-blue-500 text-black p-4">
+        <p class="text-xl font-semibold text-white text-center">E-mail Verification</p>
+    </div>
+    <form class="p-6 shadow-md rounded-md">
         <div class="flex items-center space-x-4">
-            <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Mobile No:</label>
-            <input type="email" id="email" class="w-64 border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
+            <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Email (वैकल्पिक - सूचनाओं के बेहतर
+                आदान-<br>प्रदान के लिए):</label>
+            <input type="email" id="email"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+    </form>
+    </div>
+
+
+    <div>
+    <div class="bg-blue-500 text-black p-4">
+        <p class="text-xl font-semibold text-white text-center">Mobile Verification</p>
+    </div>
+    <form class=" p-6 shadow-md rounded-md">
+        <div class="flex items-center space-x-4">
+            <label for="phnumber" class="font-medium text-gray-700 whitespace-nowrap">Mobile No:</label>
+            <input type="number" id="phnumber"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
         </div>
         <div class="flex items-center space-x-4 mt-8 ml-64">
-            <span class="w-64 border rounded-md text-green-500 text-center mr-32 font-bold">SH J  N</span>
-            <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Enter code shown left side: </label>
-            <input type="email" id="email" class="w-64 border rounded-md shadow-md focus:shadow-lg focus:shadow-blue-400 focus:ring-blue-400 focus:border-blue-400">
+            <span class="w-64 border rounded-md text-green-500 text-center mr-32 font-bold">SH J N</span>
+            <label for="captcha" class="font-medium text-gray-700 whitespace-nowrap">Enter code shown left side:
+            </label>
+            <input type="text" id="captcha"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
         </div>
-    </form>
-    <form class="bg-white p-6 shadow-md rounded-md">
-        
+    
+    <!-- <form class=" p-6 shadow-md rounded-md"> -->
+
         <div class="flex justify-end space-x-4 mt-6">
-            <button type="button" class="px-6 py-2 bg-red-500 text-white font-medium rounded-md shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
+            <button type="button"
+                class="px-6 py-2 bg-red-500 text-white font-medium rounded-md shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
                 Cancel
             </button>
-            <button type="submit" class="px-6 py-2 bg-green-500 text-white font-medium rounded-md shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+            <button type="submit"
+                class="px-6 py-2 bg-green-500 text-white font-medium rounded-md shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
                 Next
             </button>
         </div>
     </form>
+    </div>
+
+</div>
+
+
     <div class="flex justify-between items-center  bg-white w-full border-t-8 border-blue-800">
 
         <div className="w-1/6 ">
 
-            <img className= ' w-full h-full object-cover' src="\assets\FooterImg\digital india.png" alt="Digital Marketing" >
+            <img className=' w-full h-full object-cover' src="\assets\FooterImg\digital india.png"
+                alt="Digital Marketing">
         </div>
         <div className="w-1/6 ">
 
-            <img className= ' w-1/6 h-full object-cover'  src="\assets\FooterImg\make in india.png" alt="Make in India" >
-            
+            <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\make in india.png" alt="Make in India">
+
         </div>
         <div className="w-1/6 ">
 
-            <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\skill india.png" alt="skill india">
-            
+            <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\skill india.png" alt="skill india">
+
         </div>
         <div className="w-1/6 ">
 
-            <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\swatch bharat.png" alt="swatch bharat">
+            <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\swatch bharat.png" alt="swatch bharat">
         </div>
         <div className="w-1/6 ">
 
-            <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\msme.png" alt="msme" alt="msme">
+            <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\msme.png" alt="msme" alt="msme">
         </div>
 
     </div>
-    
+
     <div class="bg-blue-800 text-white px-2 py-4">
         <div class="flex items-center space-x-4">
-         
-          <a href="#" class="hover:underline border-l border-gray-500">Refund & Cancellation</a>
-      
-          <a href="#" class="hover:underline">Terms & Conditions</a>
-      
-          <a href="#" class="hover:underline">Privacy & Policy</a>
-          
-          <a href="#" class="hover:underline">Sponsers</a>
-      
-          <a href="#" class="hover:underline ">Useful Links</a
-       
-          <a href="#" class="hover:underline">Joint Entrance Examination</a>
-      
-          <a href="#" class="hover:underline">Online Payment</a>
 
-          <a href="#" class="hover:underline">Payment Receipt</a>
-      
+            <a href="#" class="hover:underline border-l border-gray-500">Refund & Cancellation</a>
+
+            <a href="#" class="hover:underline">Terms & Conditions</a>
+
+            <a href="#" class="hover:underline">Privacy & Policy</a>
+
+            <a href="#" class="hover:underline">Sponsers</a>
+
+            <a href="#" class="hover:underline ">Useful Links</a <a href="#" class="hover:underline">Joint Entrance
+            Examination</a>
+
+            <a href="#" class="hover:underline">Online Payment</a>
+
+            <a href="#" class="hover:underline">Payment Receipt</a>
+
         </div>
-      </div>
-      
-      
+    </div>
+
+
     <div class="bg-blue-900">
         <div class="text-white flex items-center justify-between px-4 py-2">
-         
-          <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
-          
-          <div class="flex space-x-4">
-            <img src="\assets\FooterIcon\fb.png" class="h-7 w-7">
-            <img src="\assets\FooterIcon\insta.png" class="h-7 w-7">
-            <img src="\assets\FooterIcon\print-logo.png" class="h-7 w-7">
-            <img src="\assets\FooterIcon\quo.png" class="h-7 w-7">
-            <img src="\assets\FooterIcon\yout.png" class="h-7 w-7">
-          </div>
-         
-          <div class="text-right flex flex-col justify-center items-center">
-            <p>Candidate can also apply AIEESE(Primary)</p>
-            <a href="#" class="text-blue-200 hover:underline ml-16">CLICK HERE</a>
-          </div>
-        </div>
-      </div>
 
-      <script>
+            <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
+
+            <div class="flex space-x-4">
+                <img src="\assets\FooterIcon\fb.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\insta.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\print-logo.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\quo.png" class="h-7 w-7">
+                <img src="\assets\FooterIcon\yout.png" class="h-7 w-7">
+            </div>
+
+            <div class="text-right flex flex-col justify-center items-center">
+                <p>Candidate can also apply AIEESE(Primary)</p>
+                <a href="#" class="text-blue-200 hover:underline ml-16">CLICK HERE</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
         document.addEventListener("DOMContentLoaded", () => {
             const form = document.querySelector("form");
             const nextButton = document.querySelector('button[type="submit"]');
             const inputs = form.querySelectorAll("input, select");
             const errors = {};
-    
+
             // Validation rules
             const validators = {
                 name: value => value.trim().length >= 2 || "Name must be at least 2 characters long.",
@@ -262,7 +290,7 @@
                 institute_name: value => value.trim().length >= 2 || "Institute Name must be at least 2 characters long.",
                 email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Please enter a valid email address.",
             };
-    
+
             // Validate all fields
             function validateField(field) {
                 const value = field.value.trim();
@@ -274,7 +302,7 @@
                     showErrorMessage(field, errors[id]);
                 }
             }
-    
+
             // Show error
             function showErrorMessage(field, message) {
                 let errorElement = field.nextElementSibling;
@@ -287,30 +315,31 @@
                 field.classList.toggle("border-red-500", !!message);
                 field.classList.toggle("border-blue-400", !message);
             }
-    
-            
+
+
             function isFormValid() {
                 return Object.values(errors).every(error => !error);
             }
-    
-            
+
+
             inputs.forEach(input => {
                 input.addEventListener("blur", () => validateField(input));
                 input.addEventListener("input", () => validateField(input));
             });
-    
+
             // Handle form submission
             nextButton.addEventListener("click", event => {
                 event.preventDefault();
                 inputs.forEach(input => validateField(input));
                 if (isFormValid()) {
-                    window.location.href = "MultiForms.html"; 
+                    window.location.href = "MultiForms.html";
                 } else {
                     alert("Please correct the errors before proceeding.");
                 }
             });
         });
     </script>
-    
+
 </body>
+
 </html>
