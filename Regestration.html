@@ -8,26 +8,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-200">
-    <div class="h-6 ">
+<body class="bg-gray-200 w-full">
+    <div class="h-6 w-full ">
         <marquee class="bg-red-800 text-white">ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November
             25th, 2024, Apply Now.“</marquee>
     </div>
 
     <div class="bg-blue-800 text-white py-4">
-        <div class="container mx-auto flex items-center justify-between">
+        <div class="flex flex-col md:flex-row gap-4 justify-around items-center ">
             <!-- Logo -->
             <div class="flex-shrink-0">
                 <img src="\assets\Header\141803-aieese secondarylogo.png" alt="Logo" class="w-20 h-auto">
             </div>
-
             <!-- Text Content -->
             <div class="text-center">
-                <h1 class="text-xl font-bold">AIEESE (Secondary) - 2025</h1>
+                <h1 class="md:text-xl font-bold">AIEESE (Secondary) - 2025</h1>
                 <p class="text-sm">ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION (SECONDARY) - 2025</p>
                 <p class="text-sm">अखिल भारतीय इंजीनियरिंग प्रवेश छात्रवृत्ति परीक्षा (द्वितीयक) - 2025</p>
             </div>
-
             <!-- Contact Information -->
             <div class="text-right">
                 <p class="text-sm">📞 +91-9990555522</p>
@@ -37,22 +35,22 @@
     </div>
 
 
-    <nav class="bg-blue-900 relative z-10">
-        <ul class="flex justify-center space-x-10 text-white font-medium py-4">
-            <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+    <nav class="bg-blue-900 relative z-10 p-2">
+        <ul class="flex flex-wrap justify-center text-white font-medium ">
+            <li class=" p-2 hover:bg-red-800 border-x border-gray-400">
                 <a href="#">HOME</a>
             </li>
-            <li class="h-8 w-24 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
                 <a href="#">ABOUT US</a>
             </li>
-            <li class="h-8 w-20 hover:bg-red-800 relative group border-r border-gray-400">
-                <a href="#">Student</a>
+            <li class="p-2 hover:bg-red-800 relative group border-r border-gray-400">
+                <a href="#">STUDENT</a>
                 <!-- Dropdown -->
-                <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm mt-2 space-y-1 z-20">
-                    <li class="bg-white text-black w-64 py-1 px-2 hover:bg-red-700">
+                <ul class="absolute w-96 hidden group-hover:block bg-blue-800 text-white text-sm z-20">
+                    <li class="bg-white text-black p-2 hover:bg-red-700">
                         <a href="#">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
                     </li>
-                    <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                    <li class="bg-white text-black p-2 hover:bg-red-700">
                         <a href="/LoginForm.html" target="_self">REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
                     </li>
                     <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
@@ -60,143 +58,147 @@
                     </li>
                 </ul>
             </li>
-            <li class="h-8 w-32 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
                 <a href="#">OFFICIAL LOGIN</a>
             </li>
-            <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
                 <a href="#">FAQ</a>
             </li>
-            <li class="h-8 w-28 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
                 <a href="#">CONTACT US</a>
             </li>
         </ul>
     </nav>
-<div class="mx-20 my-5 flex flex-col gap-4">
-    <div>
-    <div class="bg-blue-500 text-black text-center  p-4">
-        <p class="text-xl text-white font-semibold">Student Registration Details</p>
+
+
+
+
+     <div class="mx-20 my-5 flex flex-col gap-4">
+        <div>
+            <div class="bg-blue-500 text-black text-center  p-4">
+                <p class="text-xl text-white font-semibold">Student Registration Details</p>
+            </div>
+
+            <form id="personalForm" class="grid grid-cols-1 md:grid-cols-2 gap-4 shadow-md p-6 rounded-b-lg">
+                <div>
+                    <label for="name" class="block text-blue-500 font-bold mb-1">Name of Student:</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter student's name" required>
+                </div>
+                <div>
+                    <label for="father_name" class="block text-blue-500 font-bold mb-1">Father's Name:</label>
+                    <input type="text" id="father_name" name="father_name"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter father's name" required>
+                </div>
+                <div>
+                    <label for="mother_name" class="block text-blue-500 font-bold mb-1">Mother's Name:</label>
+                    <input type="text" id="mother_name" name="mother_name"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter mother's name" required>
+                </div>
+                <div>
+                    <label for="dob" class="block text-blue-500 font-bold mb-1">Date of Birth as Per
+                        Certificate:</label>
+                    <input type="date" id="dob" name="dob"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        required>
+                </div>
+                <div>
+                    <label for="gender" class="block text-blue-500 font-bold mb-1">Gender:</label>
+                    <select id="gender" name="gender"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="category" class="block text-blue-500 font-bold mb-1">Category:</label>
+                    <input type="text" id="category" name="category"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter category" required>
+                </div>
+                <div>
+                    <label for="home_district" class="block text-blue-500 font-bold mb-1">Home District:</label>
+                    <input type="text" id="home_district" name="home_district"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter home district" required>
+                </div>
+                <div>
+                    <label for="institute_state" class="block text-blue-500 font-bold mb-1">Institute State:</label>
+                    <input type="text" id="institute_state" name="institute_state"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter institute state" required>
+                </div>
+                <div>
+                    <label for="institute_district" class="block text-blue-500 font-bold mb-1">Institute
+                        District:</label>
+                    <input type="text" id="institute_district" name="institute_district"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter institute district" required>
+                </div>
+                <div>
+                    <label for="institute_name" class="block text-blue-500 font-bold mb-1">Institute Name:</label>
+                    <input type="text" id="institute_name" name="institute_name"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+                        placeholder="Enter institute name" required>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <div>
+            <div class="bg-blue-500 text-black p-4">
+                <p class="text-xl font-semibold text-white text-center">E-mail Verification</p>
+            </div>
+            <form class="p-6 shadow-md rounded-md">
+                <div class="flex items-center space-x-4">
+                    <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Email (वैकल्पिक - सूचनाओं के
+                        बेहतर
+                        आदान-<br>प्रदान के लिए):</label>
+                    <input type="email" id="email"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+            </form>
+        </div>
+
+
+        <div>
+            <div class="bg-blue-500 text-black p-4">
+                <p class="text-xl font-semibold text-white text-center">Mobile Verification</p>
+            </div>
+            <form class=" p-6 shadow-md rounded-md">
+                <div class="flex items-center space-x-4">
+                    <label for="phnumber" class="font-medium text-gray-700 whitespace-nowrap">Mobile No:</label>
+                    <input type="number" id="phnumber"
+                        class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex items-center space-x-4 mt-8 ml-64">
+                    <span class="w-64 border rounded-md text-green-500 text-center mr-32 font-bold">SH J N</span>
+                    <label for="captcha" class="font-medium text-gray-700 whitespace-nowrap">Enter code shown left side:
+                    </label>
+                    <input type="text" id="captcha"
+                        class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                </div>
+                <div class="flex justify-end space-x-4 mt-6">
+                    <button type="button"
+                        class="px-6 py-2 bg-red-500 text-white font-medium rounded-md shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="px-6 py-2 bg-green-500 text-white font-medium rounded-md shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+                        Next
+                    </button>
+                </div>
+            </form>
+        </div>
+
     </div>
-
-    <form id="personalForm" class="grid grid-cols-1 md:grid-cols-2 gap-4 shadow-md p-6 rounded-b-lg">
-        <div>
-            <label for="name" class="block text-blue-500 font-bold mb-1">Name of Student:</label>
-            <input type="text" id="name" name="name"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter student's name" required>
-        </div>
-        <div>
-            <label for="father_name" class="block text-blue-500 font-bold mb-1">Father's Name:</label>
-            <input type="text" id="father_name" name="father_name"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter father's name" required>
-        </div>
-        <div>
-            <label for="mother_name" class="block text-blue-500 font-bold mb-1">Mother's Name:</label>
-            <input type="text" id="mother_name" name="mother_name"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter mother's name" required>
-        </div>
-        <div>
-            <label for="dob" class="block text-blue-500 font-bold mb-1">Date of Birth as Per Certificate:</label>
-            <input type="date" id="dob" name="dob"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                required>
-        </div>
-        <div>
-            <label for="gender" class="block text-blue-500 font-bold mb-1">Gender:</label>
-            <select id="gender" name="gender"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                required>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <div>
-            <label for="category" class="block text-blue-500 font-bold mb-1">Category:</label>
-            <input type="text" id="category" name="category"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter category" required>
-        </div>
-        <div>
-            <label for="home_district" class="block text-blue-500 font-bold mb-1">Home District:</label>
-            <input type="text" id="home_district" name="home_district"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter home district" required>
-        </div>
-        <div>
-            <label for="institute_state" class="block text-blue-500 font-bold mb-1">Institute State:</label>
-            <input type="text" id="institute_state" name="institute_state"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter institute state" required>
-        </div>
-        <div>
-            <label for="institute_district" class="block text-blue-500 font-bold mb-1">Institute District:</label>
-            <input type="text" id="institute_district" name="institute_district"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter institute district" required>
-        </div>
-        <div>
-            <label for="institute_name" class="block text-blue-500 font-bold mb-1">Institute Name:</label>
-            <input type="text" id="institute_name" name="institute_name"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Enter institute name" required>
-        </div>
-    </form>
-    </div>
-
-
-
-
-    <div>
-    <div class="bg-blue-500 text-black p-4">
-        <p class="text-xl font-semibold text-white text-center">E-mail Verification</p>
-    </div>
-    <form class="p-6 shadow-md rounded-md">
-        <div class="flex items-center space-x-4">
-            <label for="email" class="font-medium text-gray-700 whitespace-nowrap">Email (वैकल्पिक - सूचनाओं के बेहतर
-                आदान-<br>प्रदान के लिए):</label>
-            <input type="email" id="email"
-                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-        </div>
-    </form>
-    </div>
-
-
-    <div>
-    <div class="bg-blue-500 text-black p-4">
-        <p class="text-xl font-semibold text-white text-center">Mobile Verification</p>
-    </div>
-    <form class=" p-6 shadow-md rounded-md">
-        <div class="flex items-center space-x-4">
-            <label for="phnumber" class="font-medium text-gray-700 whitespace-nowrap">Mobile No:</label>
-            <input type="number" id="phnumber"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-        </div>
-        <div class="flex items-center space-x-4 mt-8 ml-64">
-            <span class="w-64 border rounded-md text-green-500 text-center mr-32 font-bold">SH J N</span>
-            <label for="captcha" class="font-medium text-gray-700 whitespace-nowrap">Enter code shown left side:
-            </label>
-            <input type="text" id="captcha"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-        </div>
-    
-    <!-- <form class=" p-6 shadow-md rounded-md"> -->
-
-        <div class="flex justify-end space-x-4 mt-6">
-            <button type="button"
-                class="px-6 py-2 bg-red-500 text-white font-medium rounded-md shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
-                Cancel
-            </button>
-            <button type="submit"
-                class="px-6 py-2 bg-green-500 text-white font-medium rounded-md shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
-                Next
-            </button>
-        </div>
-    </form>
-    </div>
-
-</div>
 
 
     <div class="flex justify-between items-center  bg-white w-full border-t-8 border-blue-800">
@@ -228,29 +230,24 @@
     </div>
 
     <div class="bg-blue-800 text-white px-2 py-4">
-        <div class="flex items-center space-x-4">
+        <div class="flex flex-wrap items-center justify-center">
 
-            <a href="#" class="hover:underline border-l border-gray-500">Refund & Cancellation</a>
-
-            <a href="#" class="hover:underline">Terms & Conditions</a>
-
-            <a href="#" class="hover:underline">Privacy & Policy</a>
-
-            <a href="#" class="hover:underline">Sponsers</a>
-
-            <a href="#" class="hover:underline ">Useful Links</a <a href="#" class="hover:underline">Joint Entrance
+            <a href="#" class="hover:underline p-2 border-r">Refund & Cancellation</a>
+            <a href="#" class="hover:underline p-2 border-r">Terms & Conditions</a>
+            <a href="#" class="hover:underline p-2 border-r">Privacy & Policy</a>
+            <a href="#" class="hover:underline p-2 border-r">Sponsers</a>
+            <a href="#" class="hover:underline p-2 border-r ">Useful Links</a>
+            <a href="#" class="hover:underline p-2 border-r">Joint Entrance
             Examination</a>
-
-            <a href="#" class="hover:underline">Online Payment</a>
-
-            <a href="#" class="hover:underline">Payment Receipt</a>
+            <a href="#" class="hover:underline p-2 border-r">Online Payment</a>
+            <a href="#" class="hover:underline p-2 border-r">Payment Receipt</a>
 
         </div>
-    </div>
+    </div> 
 
 
-    <div class="bg-blue-900">
-        <div class="text-white flex items-center justify-between px-4 py-2">
+     <div class="bg-blue-900">
+        <div class="text-white flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between px-4 py-2">
 
             <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
 
@@ -264,7 +261,7 @@
 
             <div class="text-right flex flex-col justify-center items-center">
                 <p>Candidate can also apply AIEESE(Primary)</p>
-                <a href="#" class="text-blue-200 hover:underline ml-16">CLICK HERE</a>
+                <a href="#" class="text-blue-200 hover:underline">CLICK HERE</a>
             </div>
         </div>
     </div>

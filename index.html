@@ -1,311 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="slide.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="slide.js" defer></script>
 </head>
+
 <body>
-    <div>
-        <!--Header-->
-        <div class="h-6 ">
-            <marquee class="bg-red-800 text-white">ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024, Apply Now.“</marquee>
-        </div>
+  <div>
+    <!--Header-->
+    <div class="bg-blue-800 text-white py-4">
+      <div class="flex flex-col md:flex-row gap-4 justify-around items-center ">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+              <img src="\assets\Header\141803-aieese secondarylogo.png" alt="Logo" class="w-20 h-auto">
+          </div>
+          <!-- Text Content -->
+          <div class="text-center">
+              <h1 class="md:text-xl font-bold">AIEESE (Secondary) - 2025</h1>
+              <p class="text-sm">ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION (SECONDARY) - 2025</p>
+              <p class="text-sm">अखिल भारतीय इंजीनियरिंग प्रवेश छात्रवृत्ति परीक्षा (द्वितीयक) - 2025</p>
+          </div>
+          <!-- Contact Information -->
+          <div class="text-right">
+              <p class="text-sm">📞 +91-9990555522</p>
+              <p class="text-sm">📱 +91-9355222186</p>
+          </div>
+      </div>
+  </div>
 
-        <div class="bg-blue-800 text-white py-4">
-            <div class="container mx-auto flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <img src="\assets\Header\141803-aieese secondarylogo.png" alt="Logo" class="w-20 h-auto">
-                </div>
-    
-                <!-- Text Content -->
-                <div class="text-center">
-                    <h1 class="text-xl font-bold">AIEESE (Secondary) - 2025</h1>
-                    <p class="text-sm">ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION (SECONDARY) - 2025</p>
-                    <p class="text-sm">अखिल भारतीय इंजीनियरिंग प्रवेश छात्रवृत्ति परीक्षा (द्वितीयक) - 2025</p>
-                </div>
-    
-                <!-- Contact Information -->
-                <div class="text-right">
-                    <p class="text-sm">📞 +91-9990555522</p>
-                    <p class="text-sm">📱 +91-9355222186</p>
-                </div>
-            </div>
-        </div>
 
-        
-        <nav class="bg-blue-900 relative z-10">
-            <ul class="flex justify-center space-x-10 text-white font-medium py-4">
-              <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
-                <a href="#">HOME</a>
-              </li>
-              <li class="h-8 w-24 hover:bg-red-800 border-r border-gray-400">
-                <a href="#">ABOUT US</a>
-              </li>
-              <li class="h-8 w-20 hover:bg-red-800 relative group border-r border-gray-400">
-                <a href="#">Student</a>
-                <!-- Dropdown -->
-                <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm mt-2 space-y-1 z-20">
-                  <li class="bg-white text-black w-64 py-1 px-2 hover:bg-red-700">
-                    <a href="/StepToApply.html">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
+  <nav class="bg-blue-900 relative z-10 p-2">
+      <ul class="flex flex-wrap justify-center text-white font-medium ">
+          <li class=" p-2 hover:bg-red-800 border-x border-gray-400">
+              <a href="#">HOME</a>
+          </li>
+          <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+              <a href="#">ABOUT US</a>
+          </li>
+          <li class="p-2 hover:bg-red-800 relative group border-r border-gray-400">
+              <a href="#">STUDENT</a>
+              <!-- Dropdown -->
+              <ul class="absolute w-96 hidden group-hover:block bg-blue-800 text-white text-sm z-20">
+                  <li class="bg-white text-black p-2 hover:bg-red-700">
+                      <a href="#">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
+                  </li>
+                  <li class="bg-white text-black p-2 hover:bg-red-700">
+                      <a href="/LoginForm.html" target="_self">REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
                   </li>
                   <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
-                    <a href="/LoginForm.html" >REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
+                      <a href="#">GET/RECOVER PASSWORD</a>
                   </li>
-                  <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
-                    <a href="#">GET/RECOVER PASSWORD</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="h-8 w-32 hover:bg-red-800 border-r border-gray-400">
-                <a href="#">OFFICIAL LOGIN</a>
-              </li>
-              <li class="h-8 w-16 hover:bg-red-800 border-r border-gray-400">
-                <a href="#">FAQ</a>
-              </li>
-              <li class="h-8 w-28 hover:bg-red-800 border-r border-gray-400">
-                <a href="#">CONTACT US</a>
-              </li>
-            </ul>
-          </nav>
-          
-          
-          <div class="relative inline-block" id="slide">
-            <div
-              class="absolute top-24 left-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
-              id="btn1"
-            >
-              &lt;
-            </div>
-            <div
-              class="absolute top-24 right-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
-              id="btn2"
-            >
-              &gt;
-            </div>
-            <img src="\assets\Header\103514-AIEESE_Seco_-Home-page-1.jpg" alt="img1" id="img1">
-            <img src="\assets\Header\103558-AIEESE_Seco_-Home-page-3.jpg" alt="img2" class="hidden" id="img2">
-            <img src="\assets\Header\103702-AIEESE_Seco_-Home-page-4.jpg" alt="img3" class="hidden" id="img3">
-            <img src="\assets\Header\104217-AIEESE_Seco_-Home-page-5.jpg" alt="img4" class="hidden" id="img4">
-            <img src="\assets\Header\104233-AIEESE_Seco_-Home-page-6.jpg" alt="img5" class="hidden" id="img5">
-            <img src="\assets\Header\180707-AIEESE_Seco_-Home-page-2.jpg" alt="img7" class="hidden" id="img6">
-          </div>
-          
-
-        <!--sideBar-->
-        <div class="flex">
-            <!-- Sidebar -->
-            <div class="w-60 h-full text-white p-3 border border-gray-300">
-              <h2 class="text-xl font-semibold mb-1 bg-red-800 text-center">IMPORTANT LINKS</h2>
-              <ul class="space-y-1">
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Home</a>
-                </li>
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">About Us</a>
-                </li>
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Student</a>
-                </li>
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Official Login</a>
-                </li>
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Reports</a>
-                </li>
-                <li class="border border-gray-300">
-                  <a href="#" class="block hover:bg-red-800 text-black font-bold">Contact Us</a>
-                </li>
               </ul>
-            </div>
-          
-            <!-- Middle Content -->
-            <div class="flex-grow mx-4">
-              <div class="bg-red-800 text-white text-center py-2 font-semibold">
-                Important Instructions for Student and Institution.
-              </div>
-          
-              <!-- Navigation Buttons -->
-              <div class="flex justify-center gap-4 bg-green-700 py-4">
-                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Student Login</a>
-                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">List of Finalized Student</a>
-                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Verify Your Application Status</a>
-                <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Contact</a>
-              </div>
-          
-              <!-- Main Content -->
-              <div class="max-w-4xl bg-white shadow-lg rounded-lg mt-6 p-6">
-                <h1 class="text-center text-2xl font-bold text-red-600 mb-4">WELCOME TO AIEESE (Secondary) - 2025</h1>
-                <p class="text-gray-800 leading-relaxed">
-                  ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION-SECONDARY (AIEESE-Secondary) is an examination body
-                  that offers scholarships to aspiring students who qualify for government engineering colleges, including IITs,
-                  NITs, and IIITs, through the JEE examinations.
-                </p>
-                <p class="text-gray-800 leading-relaxed mt-4">
-                  It is crucial for all aspirants to take the AIEESE (Secondary) exam because if they secure admission to IITs,
-                  NITs, or IIITs, they become eligible to receive a scholarship. Scholarships are awarded based on their performance
-                  in the AIEESE (Secondary) examination.
-                </p>
-                <p class="text-gray-800 leading-relaxed mt-4">
-                  AIEESE (Secondary) was established in 2012 under the "Scholarship and Admission Eligibility Testing Agency (SAET
-                  Agency)." Since then, the examination has been conducted annually. The objective of AIEESE (Secondary) is to
-                  provide financial assistance to engineering aspirants who qualify for IIT, NIT, or IIIT institutions based on their
-                  performance in the AIEESE (Secondary) exam. Students can benefit from scholarships covering up to four years of
-                  tuition fees.
-                </p>
-                <p class="text-gray-800 leading-relaxed mt-4">
-                  Since 2012, hundreds of thousands of students from all across India have applied for and benefited from this
-                  scholarship. Most of the students who qualify for IITs, NITs, and IIITs have applied for the AIEESE (Secondary)
-                  scholarship program to take advantage of the financial benefits. The students can avail up to the complete course
-                  fee as a scholarship based on the merit list prepared through the AIEESE Secondary Examination.
-                  <a href="#" class="text-blue-600 underline hover:text-blue-800">Read More</a>
-                </p>
-              </div>
-            </div>
-          
-            <!-- News and Announcement -->
-            <div class="w-80 bg-white border border-gray-300 shadow-md rounded-md">
-              <div class="bg-red-800 text-white text-center py-2 rounded-t-md font-bold text-lg">
-                NEWS & ANNOUNCEMENT
-              </div>
-              <ul class="p-4 space-y-4">
-                <li class="flex items-start">
-                  <span class="text-red-600 font-bold mr-2">NEW</span>
-                  <p>
-                    <strong>ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024. Apply Now.</strong>
-                    <a href="#" class="text-blue-600 underline">Read more</a>
-                  </p>
-                </li>
-                
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>10+2 Appearing and Qualified students can apply.</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-      <!-- Item 3 -->
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>10+2 Appearing or qualified (Subject group: PCM) can apply for Engineering.</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-      <!-- Item 4 -->
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>All Participating institutes are government approved.</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-      <!-- Item 5 -->
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>All JEE (Mains/Advanced) aspirants can apply for AIEESE (Secondary).</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-      <!-- Item 6 -->
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>Examination centres are available in all major cities across India.</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-      <!-- Item 7 -->
-      <li class="flex items-start">
-        <span class="text-red-600 font-bold mr-2">NEW</span>
-        <p>
-          <strong>Scholarship distribution process starts from January 15, 2025.</strong>
-          <a href="#" class="text-blue-600 underline">Read more</a>
-        </p>
-      </li>
-              </ul>
-              <div class="text-center bg-gray-100 py-2 rounded-b-md">
-                <a href="#" class="text-blue-600 font-semibold underline">Click here for all the announcements</a>
-              </div>
-            </div>
-          </div>
-          
-        <!--Footer-->
+          </li>
+          <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+              <a href="#">OFFICIAL LOGIN</a>
+          </li>
+          <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+              <a href="#">FAQ</a>
+          </li>
+          <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+              <a href="#">CONTACT US</a>
+          </li>
+      </ul>
+  </nav>
 
-        <div class="flex justify-between items-center  bg-white w-full border-t-8 border-blue-800">
 
-            <div className="w-1/6 ">
-    
-                <img className= ' w-full h-full object-cover' src="\assets\FooterImg\digital india.png" alt="Digital Marketing" >
-            </div>
-            <div className="w-1/6 ">
-    
-                <img className= ' w-1/6 h-full object-cover'  src="\assets\FooterImg\make in india.png" alt="Make in India" >
-                
-            </div>
-            <div className="w-1/6 ">
-    
-                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\skill india.png" alt="skill india">
-                
-            </div>
-            <div className="w-1/6 ">
-    
-                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\swatch bharat.png" alt="swatch bharat">
-            </div>
-            <div className="w-1/6 ">
-    
-                <img className= ' w-1/6 h-full object-cover' src="\assets\FooterImg\msme.png" alt="msme" alt="msme">
-            </div>
-
-        </div>
-        
-        <div class="bg-blue-800 text-white px-2 py-4">
-            <div class="flex items-center space-x-4">
-             
-              <a href="#" class="hover:underline border-l border-gray-500">Refund & Cancellation</a>
-          
-              <a href="#" class="hover:underline">Terms & Conditions</a>
-          
-              <a href="#" class="hover:underline">Privacy & Policy</a>
-              
-              <a href="#" class="hover:underline">Sponsers</a>
-          
-              <a href="#" class="hover:underline ">Useful Links</a
-           
-              <a href="#" class="hover:underline">Joint Entrance Examination</a>
-          
-              <a href="#" class="hover:underline">Online Payment</a>
-    
-              <a href="#" class="hover:underline">Payment Receipt</a>
-          
-            </div>
-          </div>
-          
-          
-        <div class="bg-blue-900">
-            <div class="text-white flex items-center justify-between px-4 py-2">
-             
-              <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
-              
-              <div class="flex space-x-4">
-                <img src="\assets\FooterIcon\fb.png" class="h-7 w-7">
-                <img src="\assets\FooterIcon\insta.png" class="h-7 w-7">
-                <img src="\assets\FooterIcon\print-logo.png" class="h-7 w-7">
-                <img src="\assets\FooterIcon\quo.png" class="h-7 w-7">
-                <img src="\assets\FooterIcon\yout.png" class="h-7 w-7">
-              </div>
-             
-              <div class="text-right flex flex-col justify-center items-center">
-                <p>Candidate can also apply AIEESE(Primary)</p>
-                <a href="#" class="text-blue-200 hover:underline ml-16">CLICK HERE</a>
-              </div>
-            </div>
-          </div>
-    
+    <div class="relative inline-block" id="slide">
+      <div
+        class="absolute top-24 left-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
+        id="btn1">
+        &lt;
+      </div>
+      <div
+        class="absolute top-24 right-2 h-8 w-8 bg-red-800 text-white font-bold flex items-center justify-center rounded-full cursor-pointer"
+        id="btn2">
+        &gt;
+      </div>
+      <img src="\assets\Header\103514-AIEESE_Seco_-Home-page-1.jpg" alt="img1" id="img1">
+      <img src="\assets\Header\103558-AIEESE_Seco_-Home-page-3.jpg" alt="img2" class="hidden" id="img2">
+      <img src="\assets\Header\103702-AIEESE_Seco_-Home-page-4.jpg" alt="img3" class="hidden" id="img3">
+      <img src="\assets\Header\104217-AIEESE_Seco_-Home-page-5.jpg" alt="img4" class="hidden" id="img4">
+      <img src="\assets\Header\104233-AIEESE_Seco_-Home-page-6.jpg" alt="img5" class="hidden" id="img5">
+      <img src="\assets\Header\180707-AIEESE_Seco_-Home-page-2.jpg" alt="img7" class="hidden" id="img6">
     </div>
+
+
+    <!--sideBar-->
+    <div class="flex">
+      <!-- Sidebar -->
+      <div class="w-60 h-full text-white p-3 border border-gray-300">
+        <h2 class="text-xl font-semibold mb-1 bg-red-800 text-center">IMPORTANT LINKS</h2>
+        <ul class="space-y-1">
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">Home</a>
+          </li>
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">About Us</a>
+          </li>
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">Student</a>
+          </li>
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">Official Login</a>
+          </li>
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">Reports</a>
+          </li>
+          <li class="border border-gray-300">
+            <a href="#" class="block hover:bg-red-800 text-black font-bold">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Middle Content -->
+      <div class="flex-grow mx-4">
+        <div class="bg-red-800 text-white text-center py-2 font-semibold">
+          Important Instructions for Student and Institution.
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-center gap-4 bg-green-700 py-4">
+          <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Student Login</a>
+          <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">List of Finalized Student</a>
+          <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Verify Your Application
+            Status</a>
+          <a href="#" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Contact</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="max-w-4xl bg-white shadow-lg rounded-lg mt-6 p-6">
+          <h1 class="text-center text-2xl font-bold text-red-600 mb-4">WELCOME TO AIEESE (Secondary) - 2025</h1>
+          <p class="text-gray-800 leading-relaxed">
+            ALL INDIA ENGINEERING ENTRANCE SCHOLARSHIP EXAMINATION-SECONDARY (AIEESE-Secondary) is an examination body
+            that offers scholarships to aspiring students who qualify for government engineering colleges, including
+            IITs,
+            NITs, and IIITs, through the JEE examinations.
+          </p>
+          <p class="text-gray-800 leading-relaxed mt-4">
+            It is crucial for all aspirants to take the AIEESE (Secondary) exam because if they secure admission to
+            IITs,
+            NITs, or IIITs, they become eligible to receive a scholarship. Scholarships are awarded based on their
+            performance
+            in the AIEESE (Secondary) examination.
+          </p>
+          <p class="text-gray-800 leading-relaxed mt-4">
+            AIEESE (Secondary) was established in 2012 under the "Scholarship and Admission Eligibility Testing Agency
+            (SAET
+            Agency)." Since then, the examination has been conducted annually. The objective of AIEESE (Secondary) is to
+            provide financial assistance to engineering aspirants who qualify for IIT, NIT, or IIIT institutions based
+            on their
+            performance in the AIEESE (Secondary) exam. Students can benefit from scholarships covering up to four years
+            of
+            tuition fees.
+          </p>
+          <p class="text-gray-800 leading-relaxed mt-4">
+            Since 2012, hundreds of thousands of students from all across India have applied for and benefited from this
+            scholarship. Most of the students who qualify for IITs, NITs, and IIITs have applied for the AIEESE
+            (Secondary)
+            scholarship program to take advantage of the financial benefits. The students can avail up to the complete
+            course
+            fee as a scholarship based on the merit list prepared through the AIEESE Secondary Examination.
+            <a href="#" class="text-blue-600 underline hover:text-blue-800">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- News and Announcement -->
+      <div class="w-80 bg-white border border-gray-300 shadow-md rounded-md">
+        <div class="bg-red-800 text-white text-center py-2 rounded-t-md font-bold text-lg">
+          NEWS & ANNOUNCEMENT
+        </div>
+        <ul class="p-4 space-y-4">
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>ATTENTION! AIEESE Secondary 2025-26 Online Applications close on November 25th, 2024. Apply
+                Now.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>10+2 Appearing and Qualified students can apply.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+          <!-- Item 3 -->
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>10+2 Appearing or qualified (Subject group: PCM) can apply for Engineering.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+          <!-- Item 4 -->
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>All Participating institutes are government approved.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+          <!-- Item 5 -->
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>All JEE (Mains/Advanced) aspirants can apply for AIEESE (Secondary).</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+          <!-- Item 6 -->
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>Examination centres are available in all major cities across India.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+          <!-- Item 7 -->
+          <li class="flex items-start">
+            <span class="text-red-600 font-bold mr-2">NEW</span>
+            <p>
+              <strong>Scholarship distribution process starts from January 15, 2025.</strong>
+              <a href="#" class="text-blue-600 underline">Read more</a>
+            </p>
+          </li>
+        </ul>
+        <div class="text-center bg-gray-100 py-2 rounded-b-md">
+          <a href="#" class="text-blue-600 font-semibold underline">Click here for all the announcements</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="flex justify-between items-center  bg-white w-full border-t-8 border-blue-800">
+
+      <div className="w-1/6 ">
+
+          <img className=' w-full h-full object-cover' src="\assets\FooterImg\digital india.png"
+              alt="Digital Marketing">
+      </div>
+      <div className="w-1/6 ">
+
+          <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\make in india.png" alt="Make in India">
+
+      </div>
+      <div className="w-1/6 ">
+
+          <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\skill india.png" alt="skill india">
+
+      </div>
+      <div className="w-1/6 ">
+
+          <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\swatch bharat.png" alt="swatch bharat">
+      </div>
+      <div className="w-1/6 ">
+
+          <img className=' w-1/6 h-full object-cover' src="\assets\FooterImg\msme.png" alt="msme" alt="msme">
+      </div>
+
+  </div>
+
+  <div class="bg-blue-800 text-white px-2 py-4">
+      <div class="flex flex-wrap items-center justify-center">
+
+          <a href="#" class="hover:underline p-2 border-r">Refund & Cancellation</a>
+          <a href="#" class="hover:underline p-2 border-r">Terms & Conditions</a>
+          <a href="#" class="hover:underline p-2 border-r">Privacy & Policy</a>
+          <a href="#" class="hover:underline p-2 border-r">Sponsers</a>
+          <a href="#" class="hover:underline p-2 border-r ">Useful Links</a>
+          <a href="#" class="hover:underline p-2 border-r">Joint Entrance
+          Examination</a>
+          <a href="#" class="hover:underline p-2 border-r">Online Payment</a>
+          <a href="#" class="hover:underline p-2 border-r">Payment Receipt</a>
+
+      </div>
+  </div> 
+
+
+   <div class="bg-blue-900">
+      <div class="text-white flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between px-4 py-2">
+
+          <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
+
+          <div class="flex space-x-4">
+              <img src="\assets\FooterIcon\fb.png" class="h-7 w-7">
+              <img src="\assets\FooterIcon\insta.png" class="h-7 w-7">
+              <img src="\assets\FooterIcon\print-logo.png" class="h-7 w-7">
+              <img src="\assets\FooterIcon\quo.png" class="h-7 w-7">
+              <img src="\assets\FooterIcon\yout.png" class="h-7 w-7">
+          </div>
+
+          <div class="text-right flex flex-col justify-center items-center">
+              <p>Candidate can also apply AIEESE(Primary)</p>
+              <a href="#" class="text-blue-200 hover:underline">CLICK HERE</a>
+          </div>
+      </div>
+  </div>
+
+  </div>
 </body>
+
 </html>
