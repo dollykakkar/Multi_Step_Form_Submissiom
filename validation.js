@@ -29,13 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div2 = document.getElementById("div2");
             if (div2) {
+               
                 div2.classList.add("bg-blue-500", "text-white");
                 div2.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p2 = div2.querySelector("p");
+               
+                const p2 = document.getElementById("p2");
                 if (p2) {
-                    p2.classList.add("text-blue-500");
-                    p2.classList.remove("text-gray-500");
+                    p2.classList.add("text-blue-500" , "font-semibold"); // New class add karein
+                    p2.classList.remove("text-gray-500"); // Old class remove karein
                 }
             }
         }
@@ -50,13 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div3 = document.getElementById("div3");
             if (div3) {
+               
                 div3.classList.add("bg-blue-500", "text-white");
                 div3.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p3 = div3.querySelector("p");
+               
+                const p3 = document.getElementById("p3");
                 if (p3) {
-                    p3.classList.add("text-blue-500");
-                    p3.classList.remove("text-gray-500");
+                    p3.classList.add("text-blue-500" , "font-semibold");
+                    p3.classList.remove("text-gray-500"); 
                 }
             }
         }
@@ -71,13 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div4 = document.getElementById("div4");
             if (div4) {
+               
                 div4.classList.add("bg-blue-500", "text-white");
                 div4.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p4 = div4.querySelector("p");
+               
+                const p4 = document.getElementById("p4");
                 if (p4) {
-                    p4.classList.add("text-blue-500");
-                    p4.classList.remove("text-gray-500");
+                    p4.classList.add("text-blue-500" , "font-semibold"); // New class add karein
+                    p4.classList.remove("text-gray-500"); // Old class remove karein
                 }
             }
         }
@@ -92,13 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div5 = document.getElementById("div5");
             if (div5) {
+               
                 div5.classList.add("bg-blue-500", "text-white");
                 div5.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p5 = div5.querySelector("p");
+               
+                const p5 = document.getElementById("p5");
                 if (p5) {
-                    p5.classList.add("text-blue-500");
-                    p5.classList.remove("text-gray-500");
+                    p5.classList.add("text-blue-500" , "font-semibold"); 
+                    p5.classList.remove("text-gray-500"); 
                 }
             }
         }
@@ -114,13 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div6 = document.getElementById("div6");
             if (div6) {
+               
                 div6.classList.add("bg-blue-500", "text-white");
                 div6.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p6 = div6.querySelector("p");
+               
+                const p6 = document.getElementById("p6");
                 if (p6) {
-                    p6.classList.add("text-blue-500");
-                    p6.classList.remove("text-gray-500");
+                    p6.classList.add("text-blue-500" , "font-semibold"); 
+                    p6.classList.remove("text-gray-500"); 
                 }
             }
         }

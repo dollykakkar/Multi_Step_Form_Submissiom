@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Forms</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="validation.js" defer></script>
+    <script src="admit.js" defer></script>
 </head>
 
 <body>
@@ -31,41 +31,53 @@
     </div>
 
 
-    <nav class="bg-blue-900 relative z-10 p-2">
+    <nav class="bg-[#0c2c5e] relative z-10 ">
         <ul class="flex flex-wrap justify-center text-white font-medium ">
-            <li class=" p-2 hover:bg-red-800 border-x border-gray-400">
+            <li class=" p-3 px-6 hover:bg-red-700 border-x  border-gray-700">
                 <a href="#">HOME</a>
             </li>
-            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-3 px- hover:bg-red-700 border-r border-gray-700">
                 <a href="#">ABOUT US</a>
             </li>
-            <li class="p-2 hover:bg-red-800 relative group border-r border-gray-400">
-                <a href="#">STUDENT</a>
+            <li class="p-3 px-6 hover:bg-red-700 relative group border-r  border-gray-700 ">
+                <a href="#">STUDENT <span>&#9662;</span></a>
                 <!-- Dropdown -->
-                <ul class="absolute hidden group-hover:block bg-blue-800 text-white text-sm z-20">
+                <ul class="absolute w-80 top-full hidden group-hover:block bg-blue-800 text-white text-sm z-20">
                     <li class="bg-white text-black p-2 hover:bg-red-700">
-                        <a href="#">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
+                        <a href="StepToApply.html">REGISTRATION FOR BC/EBC/GEN STUDENT</a>
                     </li>
                     <li class="bg-white text-black p-2 hover:bg-red-700">
                         <a href="/LoginForm.html" target="_self">REGISTERED USER LOGIN (BC/EBC/GEN STUDENT)</a>
                     </li>
-                    <li class="bg-white text-black py-1 px-2 hover:bg-red-700">
+                    <li class="bg-white text-black p-2 hover:bg-red-700">
                         <a href="#">GET/RECOVER PASSWORD</a>
                     </li>
                 </ul>
             </li>
-            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-3 px-6 hover:bg-red-700 border-r  border-gray-700">
                 <a href="#">OFFICIAL LOGIN</a>
             </li>
-            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-3 px-6 hover:bg-red-700 relative group border-r  border-gray-700 ">
+                <a href="#">REPORTS <span>&#9662;</span></a>
+                <!-- Dropdown -->
+                <ul class="absolute w-80 top-full hidden group-hover:block bg-blue-800 text-white text-sm z-20">
+                    <li class="bg-white text-black p-2 hover:bg-red-700">
+                        <a href="#">LIST OF FINALIZED STUDENTS</a>
+                    </li>
+                    <li class="bg-white text-black p-2 hover:bg-red-700">
+                        <a href="#" target="_self">VIEW REJECTED/DEFECTIVE INSTITUION LIST</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="p-3 px-6 hover:bg-red-700 border-r  border-gray-700">
                 <a href="#">FAQ</a>
             </li>
-            <li class="p-2 hover:bg-red-800 border-r border-gray-400">
+            <li class="p-3 px-6 hover:bg-red-700 border-r border-gray-700">
                 <a href="#">CONTACT US</a>
             </li>
         </ul>
     </nav>
-    
+
 
     <div class="w-full max-w-4xl mx-auto mt-10">
         <!-- Header Section -->
@@ -284,12 +296,12 @@
 
         <!--Form3 -->
         <div id="form3" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">School Details Form</h2>
+            <!-- <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">School Details Form</h2> -->
             <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Apply For -->
                 <div>
                     <label class="block text-blue-500 font-bold mb-1">Apply For:</label>
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-4" id="apply">
                         <label class="flex items-center space-x-2">
                             <input type="radio" name="apply" value="Fresh"
                                 class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
@@ -306,7 +318,7 @@
                 <!-- Status -->
                 <div>
                     <label class="block text-blue-500 font-bold mb-1">Status:</label>
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-4" id="status">
                         <label class="flex items-center space-x-2">
                             <input type="radio" name="status" value="Active"
                                 class="text-blue-500 focus:ring-blue-400 focus:outline-none" required>
@@ -365,7 +377,7 @@
         <!--Form 4-->
         <div id="form4" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
             <form class="grid grid-cols-1 gap-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Educational Documents</h2>
+                <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Educational Documents</h2> -->
 
                 <!-- Secondary Marksheet -->
                 <div>
@@ -400,7 +412,7 @@
         <!--Form5-->
         <div id="form5" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
             <form class="grid grid-cols-1 gap-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Payment Details</h2>
+                <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Payment Details</h2> -->
 
                 <!-- Transaction ID -->
                 <div>
@@ -441,8 +453,18 @@
         </div>
         <!--last step-->
         <div id="form6" class="bg-gray-200 shadow-lg rounded-lg p-6 w-full mt-4 hidden">
-            <h1 class="text-2xl font-bold text-gray-800">&#10004; Congratulations, you have completed the process
-                successfully!</h1>
+            <!-- <h1 class="text-2xl font-bold text-gray-800">&#10004; Congratulations, you have completed the process
+                successfully!
+            </h1> -->
+            <div id="review"></div>
+            </br>
+            <div id="review2"></div>
+            </br>
+            <div id="review3"></div>
+            </br>
+            <div id="review4"></div>
+            </br>
+            <div id="review5"></div>
         </div>
 
     </div>
@@ -484,15 +506,15 @@
             <a href="#" class="hover:underline p-2 border-r">Sponsers</a>
             <a href="#" class="hover:underline p-2 border-r ">Useful Links</a>
             <a href="#" class="hover:underline p-2 border-r">Joint Entrance
-            Examination</a>
+                Examination</a>
             <a href="#" class="hover:underline p-2 border-r">Online Payment</a>
             <a href="#" class="hover:underline p-2 border-r">Payment Receipt</a>
 
         </div>
-    </div> 
+    </div>
 
 
-     <div class="bg-blue-900">
+    <div class="bg-blue-900">
         <div class="text-white flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between px-4 py-2">
 
             <p class="text-white">Copyright 2024.Ⓒ All rights reserved.</p>
