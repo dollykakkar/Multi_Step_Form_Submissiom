@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (div2) {
 
                 div2.classList.add("bg-blue-500", "text-white");
-                div2.classList.remove("bg-gray-300", "text-gray-500")
+                div2.classList.remove("bg-gray-300", "text-gray-500");
+
 
                 const p2 = document.getElementById("p2");
                 if (p2) {
@@ -57,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     p2.classList.remove("text-gray-500");
                 }
             }
-
         }
     });
 
@@ -86,12 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div3 = document.getElementById("div3");
             if (div3) {
+
                 div3.classList.add("bg-blue-500", "text-white");
                 div3.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p3 = div3.querySelector("p");
+
+                const p3 = document.getElementById("p3");
                 if (p3) {
-                    p3.classList.add("text-blue-500");
+                    p3.classList.add("text-blue-500", "font-semibold");
                     p3.classList.remove("text-gray-500");
                 }
             }
@@ -117,12 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div4 = document.getElementById("div4");
             if (div4) {
+
                 div4.classList.add("bg-blue-500", "text-white");
                 div4.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p4 = div4.querySelector("p");
+
+                const p4 = document.getElementById("p4");
                 if (p4) {
-                    p4.classList.add("text-blue-500");
+                    p4.classList.add("text-blue-500", "font-semibold");
                     p4.classList.remove("text-gray-500");
                 }
             }
@@ -143,12 +147,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div5 = document.getElementById("div5");
             if (div5) {
+
                 div5.classList.add("bg-blue-500", "text-white");
                 div5.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p5 = div5.querySelector("p");
+
+                const p5 = document.getElementById("p5");
                 if (p5) {
-                    p5.classList.add("text-blue-500");
+                    p5.classList.add("text-blue-500", "font-semibold");
                     p5.classList.remove("text-gray-500");
                 }
             }
@@ -171,61 +177,143 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const div6 = document.getElementById("div6");
             if (div6) {
+
                 div6.classList.add("bg-blue-500", "text-white");
                 div6.classList.remove("bg-gray-300", "text-gray-500");
 
-                const p6 = div6.querySelector("p");
+
+                const p6 = document.getElementById("p6");
                 if (p6) {
-                    p6.classList.add("text-blue-500");
+                    p6.classList.add("text-blue-500", "font-semibold");
                     p6.classList.remove("text-gray-500");
                 }
             }
             const review = document.getElementById("review");
             review.innerHTML = `
-            <p><strong>Name:</strong> ${formData.Student_Name}</p>
-            <p><strong>Father_Name:</strong> ${formData.fathers_Name}</p>
-            <p><strong>Gender:</strong> ${formData.Gender}</p>
-            <p><strong>Mother_Name:</strong> ${formData.Mothers_Name}</p>
-            <p><strong>Category:</strong> ${formData.Category}</p>
-            <p><strong>Cast:</strong> ${formData.Cast}</p>
-            <p><strong>Date_of_Birth:</strong> ${formData.Date_of_birth}</p>
-            <p><strong>Adhar_No:</strong> ${formData.Adhar_No}</p>
-            <p><strong>Gardians_Name:</strong> ${formData.Gardians_Name}</p>
-            <p><strong>Father_Occupation:</strong> ${formData.Father_Occupation}</p>
-            <p><strong>Religion:</strong> ${formData.Religion}</p>
+          <div class="flex flex-wrap gap-6">
+    <div class="w-full sm:w-1/3 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Applicant's Name</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Father's Name</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Gender</h3>
+    </div>
+
+    <div class="w-full sm:w-1/3 p-4">
+        <p class="text-gray-600">${formData.Student_Name}</p>
+        <p class="text-gray-600">${formData.fathers_Name}</p>
+        <p class="text-gray-600">${formData.Gender}</p>
+    </div>
+
+    <div class="w-full sm:w-1/3 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Mother's Name</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Category</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Caste</h3>
+    </div>
+
+    <div class="w-full sm:w-1/3 p-4">
+        <p class="text-gray-600">${formData.Mothers_Name}</p>
+        <p class="text-gray-600">${formData.Category}</p>
+        <p class="text-gray-600">${formData.Cast}</p>
+    </div>
+
+    <div class="w-full sm:w-1/3 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Date of Birth</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Aadhar No</h3>
+        <h3 class="text-lg font-semibold text-gray-700">Guardian's Name</h3>
+    </div>
+
+    <div class="w-full sm:w-1/3 p-4">
+        <p class="text-gray-600">${formData.Date_of_birth}</p>
+        <p class="text-gray-600">${formData.Adhar_No}</p>
+        <p class="text-gray-600">${formData.Gardians_Name}</p>
+    </div>
+</div>
+
+
             `;
+
             const review2 = document.getElementById("review2");
             review2.innerHTML = `
-            <p><strong>Mobile_No:</strong> ${formData.Mobile_No}</p>
-            <p><strong>Email:</strong> ${formData.E_mail}</p>
-            <p><strong>Domicile State:</strong> ${formData.Domicile_State}</p>
-            <p><strong>Home_District:</strong> ${formData.Home_District}</p>
-            <p><strong>Home_Block:</strong> ${formData.Home_Block}</p>
-            <p><strong>PinCode:</strong> ${formData.Pin_Code}</p>
-            <p><strong>Permanent_Address:</strong> ${formData.Permanent_Address}</p>
-            // `;
+                <div class="flex flex-wrap gap-6">
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Mobile No</h3>
+                        <p class="text-gray-600">${formData.Mobile_No}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Email</h3>
+                        <p class="text-gray-600">${formData.E_mail}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Domicile State</h3>
+                        <p class="text-gray-600">${formData.Domicile_State}</p>
+                    </div>
+            
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Home District</h3>
+                        <p class="text-gray-600">${formData.Home_District}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Home Block</h3>
+                        <p class="text-gray-600">${formData.Home_Block}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Pin Code</h3>
+                        <p class="text-gray-600">${formData.Pin_Code}</p>
+                    </div>
+            
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Permanent Address</h3>
+                        <p class="text-gray-600">${formData.Permanent_Address}</p>
+                    </div>
+                </div>
+            `;
+            
             const review3 = document.getElementById("review3");
             review3.innerHTML = `
-            <p><strong>Mobile_No:</strong> ${formData.Apply}</p>
-            <p><strong>Email:</strong> ${formData.Status}</p>
-            <p><strong>Domicile State:</strong> ${formData.Institute_Dist}</p>
-            <p><strong>Home_District:</strong> ${formData.Institute_Block}</p>
-            <p><strong>Home_Block:</strong> ${formData.Institute_Name}</p>
-            <p><strong>PinCode:</strong> ${formData.Course_Name}</p>
-             `;
+                <div class="flex flex-wrap gap-6">
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Institution District</h3>
+                        <p class="text-gray-600">${formData.Institute_Dist}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Institution Block</h3>
+                        <p class="text-gray-600">${formData.Institute_Block}</p>
+                    </div>
+            
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Institution Name</h3>
+                        <p class="text-gray-600">${formData.Institute_Name}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Course Name</h3>
+                        <p class="text-gray-600">${formData.Course_Name}</p>
+                    </div>
+                </div>
+            `;
+            
             const review4 = document.getElementById("review4");
             review4.innerHTML = `
-            <p><strong>Secondary Marksheet:</strong> ${formData.marksheet}</p>
-            <p><strong>Adhar Card:</strong> ${formData.adhar_card}</p>
-            <p><strong>Photo:</strong> ${formData.photo}</p>
-             `;
+                <div class="flex flex-wrap gap-6">
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Secondary Marksheet</h3>
+                        <p class="text-gray-600">${formData.marksheet}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Aadhar Card</h3>
+                        <p class="text-gray-600">${formData.adhar_card}</p>
+                    </div>
+            
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Photo</h3>
+                        <p class="text-gray-600">${formData.photo}</p>
+                    </div>
+                </div>
+            `;
+            
             const review5 = document.getElementById("review5");
             review5.innerHTML = `
-            <p><strong>Transaction_Id:</strong> ${formData.trans_id}</p>
-            <p><strong>Payment_Date:</strong> ${formData.payment_date}</p>
-            <p><strong>Payment_Amount:</strong> ${formData.pay_amount}</p>
-            <p><strong>Payment_Mode:</strong> ${formData.pay_mode}</p>
-             `;
+                <div class="flex flex-wrap gap-6">
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Transaction ID</h3>
+                        <p class="text-gray-600">${formData.trans_id}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Payment Date</h3>
+                        <p class="text-gray-600">${formData.payment_date}</p>
+                    </div>
+            
+                    <div class="w-full sm:w-1/3 p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Payment Amount</h3>
+                        <p class="text-gray-600">${formData.pay_amount}</p>
+                        <h3 class="text-lg font-semibold text-gray-700">Payment Mode</h3>
+                        <p class="text-gray-600">${formData.pay_mode}</p>
+                    </div>
+                </div>
+            `;
+
         }
     });
 });
